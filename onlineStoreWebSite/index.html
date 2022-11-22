@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;800&family=Dhurjati&family=Mallanna&family=Ramabhadra&family=Sree+Krushnadevaraya&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="topBand">
+            <div id="titleGrid">
+                <img id="logo" src="images/logo3.png" alt="" />
+                <h1 class="titleText">బొమ్మల కొలువు</h1>
+                <p id="titleTagline">
+                    మీ చిన్నారిని మైమరపించే బొమ్మల రంగుల ప్రపంచం
+                </p>
+            </div>
+            <div id="menuSection">
+                <div id="topMenu">
+                    <div id="delivaryAdr" class="horFlex">
+                        <i class="material-icons">place</i>
+                        <div class="verFlex">
+                            <p class="lightText lilDarkText"><span class="userName"></span>కు చేరవేయి</p>
+                            <p class="boldText"><span class="userPlace"></span> <span class="userPIN"></span></p>
+                        </div>
+                    </div>
+                    <div id="searchBar">
+                        <div class="searchBtn">
+                            <select id="searchItemList"></select>
+                        </div>
+                        <input id="searchInput"></input>
+                        <div id="searchBtn" class="searchBtn"><i class="material-icons">search</i></div>
+                    </div>
+                    <div class="verFlex menuItem">
+                        <p class="lightText lilDarkText"><span class="userName"></span> గారూ, నమస్తే!</p>
+                        <p class="boldText">ఖాతా & పట్టీలు<span class="material-icons" style="line-height: 0;vertical-align: middle;">arrow_drop_down</span></p>
+                    </div>
+                    <div class="verFlex menuItem">
+                        <p class="lightText lilDarkText">తిరిగి ఇచ్చేవి</p>
+                        <p class="boldText">& కొనుగోళ్ళు</p>
+                    </div>
+                    <div class="menuItem horFlex">
+                        <i class="material-icons" style="font-size: 36px;">shopping_cart</i>
+                        <div class="verFlex">
+                            <p class="lightText">2</p>
+                            <p class="lightText">కొనుగోలు బుట్ట</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="bottomMenu">
+                    <div class="horFlex menuItem">
+                        <i class="material-icons">menu</i>
+                        <p class="boldText">అన్నీ</p>
+                    </div>
+                    <p class="menuItem boldText">సరికొత్తవి</p>
+                    <p class="menuItem boldText">క్లియరెన్స్ సేల్</p>
+                    <div class="menuItem horFlex boldText"><span>మీ కొనుగోళ్ళు</span><span class="material-icons" style="line-height: 0;vertical-align: middle;">arrow_drop_down</span></div>
+                    <p class="menuItem boldText">మళ్ళీ కొనండి</p>
+                    <p class="menuItem boldText">కొండపల్లి బొమ్మలు</p>
+                </div>
+            </div>
+        </div>
+        <img src="images/banner02.jpg" alt="Divali Sale Image" id="bannerImg">
+        <h1 class="sectionHeading">ఇవి క్రొత్తగా వచ్చాయండోయ్!</h1>
+        <a href="#" class="lightText" style="font-size: 24px;">మరిన్ని</a>
+        <div class="itemContainer kid1BG" id="newArrivals"></div>
+        <div id="clearanceSale">
+            <h1 class="sectionHeading">క్లియరెన్స్ సేల్</h1>
+            <a href="#" class="lightText" style="font-size: 24px;">మరిన్ని</a>
+            <div class="itemContainer kid2BG" id="clearanceContainer">
+            </div>
+        </div>
+        <div id="footer">
+            <p class="titleText" style="font-size: 32px;">బొమ్మల కొలువు</p>
+            <p class="boldText">copyright&#169; కంప్యూటర్ పరిజ్ఞానం</p>
+        </div>
+        <script type="module" src="scripts/script.js"></script>
+    </body>
+</html>

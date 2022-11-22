@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    --fnt-chathura:'Chathura', sans-serif;
+    --fnt-dhurjati:'Dhurjati', sans-serif;
+    --fnt-mallanna:'Mallanna', sans-serif;
+    --fnt-ramabhadra:'Ramabhadra', sans-serif;
+    --fnt-sriKrishnaDevaraya:'Sree Krushnadevaraya', serif;
+    --clr-sectionBg: rgb(58, 53, 58);
+    --clr-text: rgb(255, 237, 254);
+    --clr-textLilDark: rgb(253, 142, 244);
+    --clr-top-band: rgb(19, 25, 33);
+    background-color: rgb(237, 234, 237);
+}
+#titleGrid {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    width: fit-content;
+    column-gap: 10px;
+    background-color: var(--clr-sectionBg);
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+}
+#logo {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 80px;
+}
+.titleText {
+    font-family: var(--fnt-dhurjati);
+    font-size: 48px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    color: var(--clr-text);
+    font-weight: normal;
+}
+#titleTagline {
+    font-family: var(--fnt-chathura);
+    font-size: 24px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    color: var(--clr-textLilDark);
+}
+#topBand {
+    display: flex;
+    padding: 5px 0;
+    column-gap: 10px;
+    background-color: var(--clr-top-band);
+}
+#menuSection {
+    background-color: var(--clr-sectionBg);
+    flex-grow: 1;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-text);
+    padding: 5px 10px;
+    gap: 5px;
+}
+.horFlex {
+    display: inline-flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.verFlex {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lightText {
+    font-family: var(--fnt-mallanna);
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+}
+.boldText {
+    font-family: var(--fnt-ramabhadra);
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+}
+#delivaryAdr {
+    border: 1.5px solid var(--clr-text);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.lilDarkText {
+    color: var(--clr-textLilDark);
+}
+#topMenu {
+    display: flex;
+    column-gap: 10px;
+}
+#searchBar {
+    flex-grow: 1;
+    display: inline-flex;
+    border-radius: 5px;
+    overflow: hidden;
+    width: fit-content;
+}
+.searchBtn {
+    background-color: rgb(239, 179, 107);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: var(--clr-top-band);
+}
+.searchBtn:hover {
+    background-color: rgb(218, 160, 88);
+    cursor: pointer;
+}
+#searchBtn > i {
+    font-size: 36px;
+}
+#searchBtn {
+    padding: 5px;
+}
+#searchInput {
+    flex-grow: 1;
+    outline: none;
+    border: none;
+}
+.arrowDown {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgb(255, 128, 43);
+    align-self: center;
+}
+.menuItem {
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 5px;
+}
+.menuItem:hover {
+    border: 1.5px solid var(--clr-text);
+    background-color: rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+#bottomMenu {
+    display: flex;
+    gap: 10px;
+}
+#bannerImg {
+    width: 100%;
+}
+.sectionHeading {
+    font-family: var(--fnt-sriKrishnaDevaraya);
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1;
+    padding: 0 16px 0 36px;
+    margin: 0;
+    display: inline-block;
+}
+.sectionHeading::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: rgb(255, 211, 100);
+    border: 5px solid rgb(31, 9, 161);
+    transform: rotateZ(45deg);
+    margin-right: 16px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 16px;
+    padding: 0px;
+    background-color: white;
+}
+.itemImg {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.itemName {
+    background-color: rgb(31, 9, 161);
+    color: var(--clr-text);
+    font-family: var(--fnt-ramabhadra);
+    line-height: 1;
+    font-weight: normal;
+    text-align: center;
+    padding: 18px;
+    margin: 0;
+}
+.itemRate {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    line-height: 1;
+    margin: 0;
+}
+.itemDiscription {
+    text-align: center;
+    padding: 10px;
+    line-height: 1;
+    margin: 0;
+}
+.itemDiscount {
+    line-height: 1;
+}
+.newItem::after {
+    display: inline-block;
+    position: absolute;
+    font-family: var(--fnt-ramabhadra);
+    line-height: 1;
+    font-size: 20px;
+    content: "క్రొత్తది";
+    padding: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: red;
+    color: var(--clr-text);
+    transform: rotateZ(-45deg);
+    margin-top: 16px;
+    margin-left: 16px;
+    box-shadow: 3px 3px 5px rgb(129, 129, 129);
+}
+.itemShadow {
+    box-shadow: 3px 3px 5px rgb(129, 129, 129);
+}
+.itemContainer {
+    display: flex;
+    gap: 16px;
+    padding: 32px;
+    align-items:flex-start;
+}
+.kid1BG {
+    background-image: url("images/kid1.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px;
+}
+.kid2BG {
+    background-image: url("images/kid2.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px;
+}
+#clearanceSale {
+    background-color: rgb(153, 220, 244);
+    margin: 16px;
+    border-radius: 16px;
+}
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(38, 2, 38);
+    color: var(--clr-text);
+    gap: 16px;
+    padding: 48px;
+}
+#searchItemList {
+    background-color: transparent;
+    line-height: 1;
+    border: none;
+    outline: none;
+    font-family: var(--fnt-mallanna);
+    font-size: 16px;
+    margin: 0;
+}
