@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <h2>ఫార్మ్ ఎలిమెంట్ మరియు అందులో సబ్‌మిట్ చేయదగ్గ ఎలిమెంట్లు</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="/test.php" method="get">
+            <fieldset style="width: fit-content;">
+                <legend>Birth Details</legend>
+                <label for="birthday">What is your birthday?</label><br />
+                <input type="date" name="birthday" id="" /><br />
+                <label for="time">At what time did you born?</label><br />
+                <input type="time" name="time" id="" /><br />
+            </fieldset>
+            <br>
+            <fieldset style="width: fit-content;">
+                <legend>Login Details</legend>
+                <label for="username">Enter your name:</label><br />
+                <input type="text" name="username" /><br />
+                <label for="password">Enter password:</label><br />
+                <input type="password" name="password" /><br>
+            </fieldset>
+            <br>
+            <label for="feedback">Please enter your comments</label><br>
+            <textarea name="feedback" id="" cols="30" rows="10"></textarea><br>
+            <br>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
