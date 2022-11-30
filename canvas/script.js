@@ -1,0 +1,57 @@
+var canvas = document.createElement("canvas");
+document.body.append(canvas);
+canvas.style.border = "1px solid black";
+canvas.width = 400;
+canvas.height = 400;
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "lightBlue";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.translate(canvas.width * 0.5, canvas.height * 0.5);
+var val = 12;
+var ang = 360 * Math.PI / (180 * val);
+ctx.rotate(ang * 0.5);
+ctx.fillStyle = "red";
+for(var x = 0; x < val; x++) {
+    ctx.rotate(ang * x);
+    ctx.beginPath();
+    ctx.moveTo(-8, -8);
+    ctx.lineTo(-25, -120);
+    ctx.lineTo(0, -150);
+    ctx.lineTo(25, -120);
+    ctx.lineTo(8, -8);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+    ctx.rotate(-ang * x);
+}
+ctx.rotate(ang * -0.5);
+ctx.lineWidth = 5;
+var grd = ctx.createLinearGradient(0, 0, 0, -150);
+grd.addColorStop(0, "yellow");
+grd.addColorStop(1, "blue");
+ctx.fillStyle = grd;
+for(var x = 0; x < val; x++) {
+    ctx.rotate(ang * x);
+    ctx.beginPath();
+    ctx.moveTo(-8, -8);
+    ctx.lineTo(-25, -120);
+    ctx.lineTo(0, -150);
+    ctx.lineTo(25, -120);
+    ctx.lineTo(8, -8);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+    ctx.rotate(-ang * x);
+}
+ctx.fillStyle = "yellow";
+ctx.beginPath();
+ctx.arc(0, 0, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.arc(0, 0, 30, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
