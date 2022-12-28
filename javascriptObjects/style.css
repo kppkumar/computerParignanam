@@ -1,0 +1,9 @@
+fieldset {
+    width: fit-content;
+}
+table, td, th {
+    border: 1px solid black;
+}
+#message {
+    color: red;
+}
