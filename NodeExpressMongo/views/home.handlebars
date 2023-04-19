@@ -1,0 +1,21 @@
+<h1>User Details</h1>
+<form method="post">
+    <fieldset>
+        <legend>Add User</legend>
+        <label for="username">User Name: </label>
+        <input name="username" type="text"><br><br>
+        <label for="email">E-mail: </label>
+        <input name="email" type="text"><br><br>
+        <input type="submit" value="Add User">
+    </fieldset>
+</form>
+<hr>
+<p>{{pageMessage}}</p>
+<hr>
+{{#each users}}
+<form method="post">
+    <label>Name: {{this.name}}, email: {{this.email}}</label>
+    <input type="hidden" name="deluseremail" value="{{this.email}}">
+    <input type="submit" value="X">
+</form>
+{{/each}}
